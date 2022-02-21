@@ -78,13 +78,13 @@ nav ul{
 }
 .line{
     background-color: black;
-    width: 0vw;
+    width: vw;
     height: 3px;
     position: absolute;
     background-color: rgb(111, 111, 236);
     transition: width 1s ease-in-out;
 }
-@media screen and (max-width: 800px)
+@media screen and (max-width: 945px min-width:620px)
 {
    .gameContainer{
        flex-wrap: wrap;
@@ -100,5 +100,25 @@ nav ul{
     grid-template-rows: repeat(3,20vw) ;
     grid-template-columns:repeat(3,20vw) ;
    }
+   
+}
+@media screen and (max-width: 820px)
+{
+   .gameContainer{
+       flex-wrap: wrap;
+   }
+   .gameInfo{
+       margin-top: 34px;
+   }
+   .gameInfo h1{
+       font-size: 1.5rem;
+   }
+   .container{
+    display: grid;
+    grid-template-rows: repeat(3,20vw) ;
+    grid-template-columns:repeat(3,20vw) ;
+   }
+   
+}
   
 }
